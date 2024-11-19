@@ -1,0 +1,428 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: .8rem 7%;
+    background: linear-gradient(to right, rgb(241, 231, 250),rgb(190, 144, 233),blueviolet);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
+}
+.header.sticky{
+    background: whitesmoke;
+    box-shadow: 0 .1rem 1rem black;
+}
+.logo{
+    font-size: 3.5rem;
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 500;
+    margin-right: 3rem;
+    text-decoration: none;
+}
+
+.header.sticky .navbar a{
+    color: black;
+}
+.header.sticky .navbar a.active{
+    color: blueviolet;
+}
+.navbar a:hover{
+    color: rgb(234, 232, 236);
+    font-size: 2rem;
+}
+/* 
+.navbar a.active::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 0.2rem;
+    
+}
+
+.header.sticky .navbar a.active::before{
+    background: white;
+    opacity: .7 ;
+} */
+
+
+/* home css */
+section{
+    min-height: 100vh;
+    padding: 4rem 7% 2rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+}
+
+.home .home-content{
+    max-width: 44rem;
+}
+
+.home-content h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 0.3;
+    margin-bottom: 1.5rem;
+}
+
+.home-content h1{
+    font-size: 4.2rem;
+    font-weight: 1000;
+    margin: .3rem;
+    font-family:cursive;
+}
+
+.home-content p{
+    font-size: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: blueviolet;
+    margin-top: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 .2rem .5rem black;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    background: transparent;
+    color: blueviolet;
+    border-color: blueviolet;
+}
+
+/* .home .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid rgb(48, 47, 48);
+    border-right: 384px solid rgb(46, 44, 48);
+    border-bottom: 384px solid rgb(22, 20, 23);
+    border-left: 384px solid transparent;
+
+} */
+.home-img img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 48%;
+    pointer-events: none;
+}
+
+
+/* about css */
+span{
+    color: blueviolet;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-img img{
+    width: 40vw;
+}
+
+.about-content{
+    padding: 2rem;
+    border: solid 5pt black;
+}
+
+.heading{
+    color: rgb(24, 18, 30);
+    font-size: 4.5rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.about-content h2{
+    text-align: center;
+    line-height: .2;
+}
+
+.about-content h3{
+    font-size: 2rem;
+}
+.about-content p{
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.about-content .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+}
+
+/* education css */
+#education {
+    padding: 3rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+#education h2 {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    color: rgb(11, 2, 19);
+    text-transform: uppercase;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.education-item {
+    background-color: #f7f0fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 400px;
+    height: 300px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-item:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+    background: linear-gradient(rgb(241, 231, 250),rgb(167, 116, 215),blueviolet);
+}
+
+.education-item h3 {
+    font-size: 2rem;
+    color: #2b2d42;
+    margin-bottom: 2.5rem;
+}
+
+.education-item p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.education-item strong {
+    color: black;
+}
+
+/* projects css */
+/* Projects Section Styles */
+#projects {
+    padding: 3rem 1rem;
+    background-color: #fdfdfd;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 4.5rem;
+    margin-bottom: 5.2rem;
+    color: #1a202c;
+    text-transform: uppercase;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+}
+
+.project-content {
+    padding: 1rem;
+}
+
+.project-content h3 {
+    font-size: 2rem;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+}
+
+.project-content p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #4a5568;
+}
+
+.project-content strong {
+    color: #2b2d42;
+}
+
+
+/* contact css */
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;  
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: white;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .2rem rgb(61, 61, 61);
+}
+
+.contact form .input-box input{
+    width: 45%;
+    padding: 1rem;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: blueviolet;
+}
+.footer-text p{
+    font-size: 1.6rem;
+    color: white;
+}
+.footer-icontop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: white;
+    border-radius: .8rem;
+    border: .2rem solid blueviolet;
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+}
+
+.footer-icontop a:hover{
+    outline-color: white;
+}
+
+
+/* Modal container (hidden by default) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* On top of other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#modalMessage{
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+
+}
+/* Close button */
+.close {
+    color: #1f1e1e;
+    float: right;
+    font-size: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 0;
+    padding: 0;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}

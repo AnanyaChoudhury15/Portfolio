@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="sty.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <!-- Home Page -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3> Hello, I am </h3>
+            <h1>Ananya Choudhury</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat necessitatibus nisi sunt eveniet
+                consectetur hic molestiae, libero enim?</p>
+            <!-- 
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div> -->
+
+            <a href="#" class="btn">View Resume</a>
+        </div>
+        <div class="overlay">
+
+        </div>
+        <div class="home-img">
+            <img src="images/female-developer.webp" alt="">
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/photo-logo.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, here is a brief description on me.</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error repellendus sit voluptas rerum tempora
+                inventore minima eius velit harum soluta quia nam perspiciatis ullam voluptates earum modi saepe impedit
+                aperiam dolore recusandae, adipisci excepturi in. Assumenda vero blanditiis sint quidem.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Education Page -->
+    <section id="education">
+        <h2>E<span>d</span>U<span>c</span>A<span>t</span>I<span>o</span>N</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>Bachelor's Degree in Computer Science</h3>
+                <p><strong>University:</strong> CMR Institute of Technology</p>
+                <p><strong>Year:</strong> 2022 - 2026</p>
+                <p><strong>CGPA:</strong> 9.2</p>
+            </div>
+            <div class="education-item">
+                <h3>12th Standard</h3>
+                <p><strong>School:</strong> HAL Public School</p>
+                <p><strong>Year:</strong> 2020 - 2022</p>
+                <p><strong>Percentage:</strong> 95%</p>
+            </div>
+            <div class="education-item">
+                <h3>10th School</h3>
+                <p><strong>School:</strong> Vagdevi Vilas School</p>
+                <p><strong>Year:</strong> 2007 - 2020</p>
+                <p><strong>Percentage:</strong> 92%</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- projects page -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/nutrillion.png" alt="Nutrillion Project Thumbnail">
+                <div class="project-content">
+                    <h3>Nutrillion - Health & Wellness Tool</h3>
+                    <p>A web-based application that calculates BMI and provides personalized diet tips.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/todo-img.png" alt="To-Do App Thumbnail">
+                <div class="project-content">
+                    <h3>To-Do List Application</h3>
+                    <p>A productivity tool that lets users create, update, and manage daily tasks.</p>
+                    <p><strong>Technologies:</strong> React, Node.js, MongoDB</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/weather-img.avif" alt="Weather App Thumbnail">
+                <div class="project-content">
+                    <h3>Weather Forecast App</h3>
+                    <p>A real-time weather app that displays current and forecasted weather conditions for any city.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, OpenWeather API</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/snakegame.webp" alt="Snake Game Thumbnail">
+                <div class="project-content">
+                    <h3>Classic Snake Game</h3>
+                    <p>A recreation of the classic snake game with levels and score tracking.</p>
+                    <p><strong>Technologies:</strong> Python, Pygame</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/developer-img.png" alt="Portfolio Project Thumbnail">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive and visually appealing portfolio to showcase my work and skills.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/ngo.png" alt="NGO Platform Thumbnail">
+                <div class="project-content">
+                    <h3>NGO Donation Platform</h3>
+                    <p>An online platform that connects donors with NGOs, featuring donation tracking and reporting tools.</p>
+                    <p><strong>Technologies:</strong> PHP, MySQL, Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span> Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Ananya | All Rights Reserved</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#home">Back to Home</a>
+        </div>
+    </footer>
+
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+    
+    <script src="script1.js"></script>
+</body>
+
+</html>
